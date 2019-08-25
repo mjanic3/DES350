@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;
+font-family: Helvetica, Arial, sans-serif; 
+width: 90%;
+padding-left: 5%;
+padding-top: 5%}
+
+.leftcolumn {
+	display:inline-block;
+	float:left;
+    border-right: 1px solid black;
+	width: 68%;
+    padding-right: 2%;
+}
+
+.lineup {
+	display:inline-block;
+	float:left;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 15px;
+	width: 100%;
+}
+
+.lineupmain {
+	display:inline-block;
+	float:left;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 0px;
+	width: 100%;
+}
+
+.rightcolumn {
+	display:inline-block;
+	float:left;
+	border:none;
+	width: 25%;
+    padding-left:20px;
+}
+
+
+
+h1   {color: black;}
+p    {color: black;}
+
+
+@media only screen and (max-width: 700px) {
+
+.leftcolumn {
+	display:block;
+    border: none;
+	width: 98%;
+    padding-right: 2%;
+}
+.rightcolumn {
+	display:block;
+	border:none;
+	width: 98%;
+    padding-left:0px;
+    padding-right:2%;
+}
+
+
+
+}
+
+</style>
+</head>
+<body>
+
+<p><button onclick="window.location.href = 'https://mjanic3.github.io/DES350/';">DES 350</button> – <button>Calendar</button> – <button>Projects</button> – <button>Resources</button></p>
+<h1>Welcome to DES 350<br> Advanced Interactive Design</h1>
+<div class="lineupmain"></div>
+<div class="leftcolumn">
+<p>
+<h2>Class 1 – August 26th (Monday) </h2><br>
+Upon completion of the course, you will be able to:<br>
+• Hand out syllabus
+• Class Intro
+• Go over syllabus
+• What is digital media <br><br>
+</p>
+
+
+</div>
+
+<div class="rightcolumn">
+<p>DES 350 / Fall, 2019<br>
+Mondays + Wednesdays<br>
+4 to 6.40pm / Room 2340</p>
+
+<div class="lineup"></div>
+<p>
+<b>Participants</b><br>
+TBD<br><br>
+</p>
+
+
+
+</div>
+
+</body>
+</html>
+
