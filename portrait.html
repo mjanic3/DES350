@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+<style>
+	
+.floatingCircle {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border-style: solid;
+  	border-width: 8px;
+	border-color: black;
+  	width: 205px;
+  	height: 205px;  
+	border-radius: 205px;
+}	
+	
+.moon {
+	position: absolute;
+	top: 5px;
+	left: 12px;
+  	width: 210px;
+  	height: 210px;
+  	border-radius: 50%;
+  	box-shadow: inset 35px 0px #989999;
+  	transform: rotate(90deg);
+}	
+	
+.beard {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+  	width: 210px;
+  	height: 210px;
+  	border-radius: 60%;
+  	box-shadow: inset 50px 0px #cbcccc;
+  	transform: rotate(-90deg);
+}
+	
+.eyeLeft {
+	position: absolute;
+	background-color: #ff0301;
+	top: 120px;
+	left: 61px;
+  	width: 15px;
+  	height: 15px;  
+	border-radius: 300px;
+}
+	
+	
+.eyeRight {
+	position: absolute;
+	background-color: #ff0301;
+	top: 120px;
+	left: 156px;
+
+  	width: 15px;
+  	height: 15px;  
+	border-radius: 300px;
+}	
+	
+	
+	
+.glassLeft {
+	position: absolute;
+	background-color: white;
+	top: 85px;
+	left: 28px;
+	border-style: solid;
+  	border-width: 9px;
+	border-color: black;
+  	width: 64px;
+  	height: 64px;  
+	border-radius: 300px;
+}
+	
+	
+.glassRight {
+	position: absolute;
+	background-color: white;
+	top: 85px;
+	left: 122px;
+	border-style: solid;
+  	border-width: 9px;
+	border-color: black;
+  	width: 64px;
+  	height: 64px;  
+	border-radius: 300px;
+}
+	
+.bridge {
+	position: absolute;
+	background-color: black;
+
+	border-radius: 50px 50px 0 0;
+	
+	top: 122px;
+	left: 106px;
+  	width: 20px;
+  	height: 20px;  
+}
+	
+.bridge-cover {
+	position: absolute;
+	background-color: white;
+
+	border-radius: 50px 50px 0 0;
+	
+	top: 130px;
+	left: 106px;
+  	width: 20px;
+  	height: 20px;  
+}
+	
+.hairOne {
+	position: absolute;
+	top: 178px;
+	left: 80px;
+	width: 70px;
+    height: 15px; /* as the half of the width */
+    background-color: #989999;
+    border-top-left-radius: 60px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 60px; /* 100px of height + 10px of border */
+	border-bottom-right-radius: 50px; /* 100px of height + 10px of border */
+	border-bottom-left-radius: 50px; /* 100px of height + 10px of border */
+}
+	
+.trapezoid {
+	position: absolute;
+	top: 185px;
+	left: 87px;
+      border-bottom: 35px solid #989999;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      height: 0;
+      width: 40px;
+	transform: rotate(180deg);
+    }	
+	
+	
+.mouth {
+	position: absolute;
+	top: 192px;
+	left: 99px;
+	width: 32px;
+    height: 9px; /* as the half of the width */
+    background-color: white;
+    border-top-left-radius: 10px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 10px; /* 100px of height + 10px of border */
+	border-bottom-right-radius: 30px; /* 100px of height + 10px of border */
+	border-bottom-left-radius: 30px; /* 100px of height + 10px of border */
+}
+	
+
+.nose {
+	position: absolute;
+	top: 110px;
+	left: 81px;
+	border-style: solid;
+  	border-width: 9px;
+	border-color: #656565;
+  	width: 50px;
+  	height: 50px;  
+	border-radius: 300px;
+}
+	
+	
+.noseCover1 {
+	position: absolute;
+	top: 100px;
+	left: 81px;
+  	width: 50px;
+  	height: 50px;  
+	background-color: white;
+	border-radius: 50px;
+}
+	
+	.noseCover2 {
+	position: absolute;
+	top: 118px;
+	left: 60px;
+  	width: 50px;
+  	height: 50px;  
+	background-color: white;
+	border-radius: 50px;
+}
+	
+.noseCover3 {
+	position: absolute;
+	top: 118px;
+	left: 124px;
+  	width: 50px;
+  	height: 50px;  
+	background-color: white;
+	border-radius: 50px;
+}
+	
+.earRight {
+	position: absolute;
+	background-color: white;
+	top: 118px;
+	left: 210px;
+	border-style: solid;
+  	border-width: 3px;
+	border-color: black;
+  	width: 20px;
+  	height: 20px;  
+	border-radius: 20px;
+}	
+	
+	
+.earLeft {
+	position: absolute;
+	background-color: white;
+	top: 118px;
+	left: -5px;
+	border-style: solid;
+  	border-width: 3px;
+	border-color: black;
+  	width: 20px;
+  	height: 20px;  
+	border-radius: 20px;
+}
+	
+	
+.triangleOne {
+	position: absolute;
+	top: 35px;
+	left: 90px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 30px solid #989999;
+    }
+	
+	.triangleTwo {
+	position: absolute;
+	top: 35px;
+	left: 105px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 30px solid #989999;
+    }
+	
+	.triangleThree {
+	position: absolute;
+	top: 35px;
+	left: 120px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 30px solid #989999;
+    }
+	
+	
+	
+	
+	.mainHolder {
+	position: absolute;
+	top: 0px;
+	left: 200px;
+  	width: 500px;
+  	height: 500px;  
+}
+	
+	
+	
+	
+}
+	
+	
+
+	
+</style>
+
+	
+</head>
+
+<body>
+	<div class="mainHolder">
+		
+		
+		
+				<div class="earRight"></div>
+<div class="earLeft"></div>
+	<div class="beard"></div>
+				<div class="trapezoid"></div>
+
+	<div class="moon"></div>
+		<div class="floatingCircle"></div>
+		<div class="nose"></div>
+		<div class="noseCover1"></div>
+		<div class="noseCover2"></div>
+		<div class="noseCover3"></div>
+
+	<div class="bridge"></div>
+	
+		<div class="bridge-cover"></div>
+
+		<div class="glassLeft"></div>
+		<div class="glassRight"></div>
+				<div class="eyeLeft"></div>
+<div class="eyeRight"></div>
+	
+		<div class="hairOne"></div>
+		<div class="mouth"></div>
+				<div class="triangleOne"></div>
+<div class="triangleTwo"></div>
+<div class="triangleThree"></div>
+</div>
+
+</body>
+</html>
