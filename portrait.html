@@ -2,9 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Portrait</title>
 	
 <style>
+	
+	body {background-color: #ececec;
+font-family: Helvetica, Arial, sans-serif; 
+line-height: 1.4em;
+width: 97%;
+padding-left: 1%;
+padding-top: 1%}
 	
 .floatingCircle {
 	position: absolute;
@@ -13,6 +20,19 @@
 	border-style: solid;
   	border-width: 8px;
 	border-color: black;
+  	width: 205px;
+  	height: 205px;  
+	border-radius: 205px;
+}	
+	
+.backCircle {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border-style: solid;
+  	border-width: 8px;
+	border-color: black;
+	background-color: white;
   	width: 205px;
   	height: 205px;  
 	border-radius: 205px;
@@ -48,6 +68,20 @@
   	width: 15px;
   	height: 15px;  
 	border-radius: 300px;
+	
+	animation-name: leftEye;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+	
+@-webkit-keyframes leftEye {
+	0%   {left: 61px}
+	10%  {left: 75px}
+	12%  {left: 75px}
+	15%  {left: 61px}
+	25%  {left: 40px}
+	100% {left: 61px}
 }
 	
 	
@@ -56,11 +90,25 @@
 	background-color: #ff0301;
 	top: 120px;
 	left: 156px;
-
   	width: 15px;
   	height: 15px;  
 	border-radius: 300px;
+	
+		
+	animation-name: rightEye;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
 }	
+	
+	@-webkit-keyframes rightEye {
+	0%   {left: 156px}
+	10%  {left: 170px}
+	12%  {left: 170px}
+	15%  {left: 156px}
+	25%  {left: 135px}
+	100% {left: 156px}
+}
 	
 	
 	
@@ -75,6 +123,21 @@
   	width: 64px;
   	height: 64px;  
 	border-radius: 300px;
+	
+	animation-name: leftGlass;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+	
+	
+@-webkit-keyframes leftGlass {
+	0%   {top: 85px}
+	5%  {top: 80px}
+	6%  {top: 85px}
+	15%  {top: 85px}
+	25%  {top: 85px}
+	100% {top: 85px}
 }
 	
 	
@@ -89,6 +152,21 @@
   	width: 64px;
   	height: 64px;  
 	border-radius: 300px;
+	
+	animation-name: rightGlass;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+	
+	
+	@-webkit-keyframes rightGlass {
+	0%   {top: 85px}
+	5%  {top: 80px}
+	6%  {top: 85px}
+	15%  {top: 85px}
+	25%  {top: 85px}
+	100% {top: 85px}
 }
 	
 .bridge {
@@ -132,11 +210,11 @@
 	position: absolute;
 	top: 185px;
 	left: 87px;
-      border-bottom: 35px solid #989999;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      height: 0;
-      width: 40px;
+     border-bottom: 35px solid #989999;
+     border-left: 8px solid transparent;
+     border-right: 8px solid transparent;
+     height: 0;
+     width: 40px;
 	transform: rotate(180deg);
     }	
 	
@@ -152,6 +230,21 @@
     border-top-right-radius: 10px; /* 100px of height + 10px of border */
 	border-bottom-right-radius: 30px; /* 100px of height + 10px of border */
 	border-bottom-left-radius: 30px; /* 100px of height + 10px of border */
+	
+	animation-name: mouth;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+	
+		@-webkit-keyframes mouth {
+	0%   {height: 9px;
+			top: 192px}
+	5%  {height: 15px;
+			top: 185px}
+	9%  {height: 9px;
+			top: 192px}
+	100% {height: 9px}
 }
 	
 
@@ -225,6 +318,29 @@
 	border-radius: 20px;
 }
 	
+	.blam {
+	position: fixed;
+		font-family: Helvetica, Arial, "sans-serif";
+		font-weight: bold;
+		letter-spacing: -25px;
+		font-size:550px;
+	color: white;
+	bottom: 400px;
+	left: 100%;
+
+	animation-name: blaam;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+	
+	
+@-webkit-keyframes blaam {
+	0%   {left: 100%}
+10%   {left: -180%}
+	100% {left: -160%}
+}
+	
 	
 .triangleOne {
 	position: absolute;
@@ -235,7 +351,20 @@
       border-left: 40px solid transparent;
       border-right: 0px solid transparent;
       border-top: 30px solid #989999;
+		
+		animation-name: hairOne;
+  		animation-duration: 10s;
+		 animation-delay: 0s;
+		animation-iteration-count: infinite;
     }
+	
+@-webkit-keyframes hairOne {
+	0%   {left: 90px}
+	5%  {left: 100px}
+	6% {left: 90px}
+}
+	
+	
 	
 	.triangleTwo {
 	position: absolute;
@@ -246,7 +375,20 @@
       border-left: 40px solid transparent;
       border-right: 0px solid transparent;
       border-top: 30px solid #989999;
+		
+		animation-name: hairTwo;
+  		animation-duration: 10s;
+		 animation-delay: 0s;
+		animation-iteration-count: infinite;
     }
+	
+	
+		@-webkit-keyframes hairTwo {
+  0%   {left: 105px}
+  5%  {left: 110px}
+	6%  {left: 105px}
+}
+	
 	
 	.triangleThree {
 	position: absolute;
@@ -257,28 +399,65 @@
       border-left: 40px solid transparent;
       border-right: 0px solid transparent;
       border-top: 30px solid #989999;
+		
+		
+		animation-name: hairThree;
+  		animation-duration: 10s;
+		 animation-delay: 0s;
+		animation-iteration-count: infinite;
     }
 	
+	@-webkit-keyframes hairThree {
+  0%   {left: 120px}
+  5%  {left: 125px}
+ 6% {left: 120px}
+}
 	
 	
 	
 	.mainHolder {
-	position: absolute;
-	top: 40px;
-	left: 200px;
-  	width: 180px;
-  	height: 500px; 
+	  position: fixed;
+    /* center the element */
+    left: 50%;
+		top: 60px;
+		margin-left: -115px;
 	zoom: 2;
     -moz-transform: scale(2);
-}
-	
-	
-	
-	
-}
-	
-	
+		
+			animation-name: example;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
 
+}
+	
+@-webkit-keyframes example {
+   0%   {top: 60px}
+	5%  {top: 50px}
+	6%  {top: 60px}
+	
+	95% {top: 60px}
+	100% {top: 60px}
+}
+	
+	.headerCopy{
+		width: 100%;
+		height: 95vh;
+		background-color: white;
+	animation-name: colorChange;
+  	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+	
+	
+@-webkit-keyframes colorChange {
+	0%   {background-color: white}
+	2%   {background-color: red}
+	25%  {background-color: white}
+	100% {background-color: white}
+}
+	
 	
 </style>
 
@@ -286,9 +465,11 @@
 </head>
 
 <body>
+<!--		<div class="blam">Blaaaam!</div>-->
+
 	<div class="mainHolder">
 		
-		
+		<dvi class="backCircle"></dvi>
 		
 				<div class="earRight"></div>
 <div class="earLeft"></div>
@@ -317,6 +498,12 @@
 <div class="triangleTwo"></div>
 <div class="triangleThree"></div>
 </div>
+	
+
+	<div class="headerCopy"></div>
+	
+
+	
 
 </body>
 </html>
