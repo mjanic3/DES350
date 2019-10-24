@@ -2,7 +2,24 @@
 <html>
 <head>
 	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
-	
+	<script type="text/javascript">
+  var imageURLs = [
+   "https://tmfriese.github.io/DES350/lulutest18.html"
+	  , "https://gira006.github.io/DES350/self_portrait.html"
+	  , "https://donteking.github.io/DES350/Portrait.html"
+	  , "https://snguye44.github.io/DES350/Nguyen_ollies_face_code.html"
+	  , "https://jmiran28.github.io/DES350/dm4-cssportrait.html"
+	  , "https://lpark25.github.io/DES350/Portrait%20Wireframe.html"
+	  , "https://avelaz36.github.io/DES350/portrait.html"
+  ];
+  function getImageTag() {
+    var iframe = '<iframe src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    iframe += imageURLs[randomIndex];
+    iframe += '\" align="center";>';
+    return iframe;
+  }
+</script>
 <style>
 body {background-color: #ececec;
 font-family: Helvetica, Arial, sans-serif; 
@@ -29,7 +46,7 @@ padding-top: 5%}
 	display:inline-block;
 	float:left;
     height: 4px;
-    background-color: black;
+    background-color: none;
     margin-bottom: 0px;
 	width: 100%;
 }
@@ -75,6 +92,15 @@ a:hover {
 	
 p    {color: black;}
 	
+	iframe {
+	width: 100%;
+	height: 820px;
+    margin-bottom: 60px;
+	border: none;
+	overflow: hidden;
+	}
+	
+
 	
 	
 @media only screen and (max-width: 700px) {
@@ -99,6 +125,11 @@ p    {color: black;}
 		background-color: #ececec;
 	}
 	
+		
+	iframe {
+	display: none;
+	}
+	
 	
 }
 </style>
@@ -107,9 +138,24 @@ p    {color: black;}
 	<div class="menu">
 	<strong>Advanced Interactive Design</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://mjanic3.github.io/DES350/calendar.html" target="_self">Calendar</a>&nbsp;&nbsp;&nbsp;<a href="https://mjanic3.github.io/DES350/projects.html" target="_self">Projects</a>&nbsp;&nbsp;&nbsp;<a href="https://mjanic3.github.io/DES350/resources.html" target="_self">Resources</a></div>
 
-<h1>Welcome</h1>
+<h1>Welcome to DES 350</h1>
+	
+	
+	
+	
 	<div class="lineupmain"></div>
 <div class="leftcolumn">
+	
+
+<script type="text/javascript">
+  document.write(getImageTag());
+</script>
+	</iframe>
+
+
+	<div class="lineup"></div>
+
+	
 <p>
 <h2>Objectives & Goals. </h2><br>
 Upon completion of the course, you will be able to:<br>
