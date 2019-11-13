@@ -1,0 +1,1693 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portrait</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">	
+</head>
+<style>
+	html, body{
+		height: 100%;
+		overflow: hidden
+	}
+	.bg{
+		width: 103%;
+		height: 103%;
+		background-color: #71F8FF;
+		position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+		left:-10px;
+		top:-10px;
+		
+		
+	}
+	.neck{
+	position: absolute;
+	width: 392px;
+	height: 623px;
+	background-color: #FFA178;
+			top:500px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+margin: auto;
+
+	
+	}
+	.neck-shade{
+	position: absolute;
+	width: 392px;
+	height: 278px;
+	background-color: #FF735F;
+		border-radius: 117px;
+			top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+margin: auto;
+
+		
+	}
+		
+			
+
+	
+	
+		@-webkit-keyframes Cboping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+	top:480px;
+			
+		}
+		5%,35%,65%{
+			transform: rotatey(5deg);
+			transform: scale(1.05);
+			transform: rotate(2deg);
+			top:540px;
+		}
+			20%,50%,80%{
+			transform: rotatey(5deg);
+			transform: scale(1.05);
+			transform: rotate(-2deg);
+			top:540px;
+
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			top:480px;
+
+			
+		}
+		
+		
+	}
+	
+	.collar{
+		position: absolute;
+	width: 180px;
+	height: 311px;
+	background-color: #46B8E0;
+		border-radius: 43px 43px 0 0;
+			top:480px;
+	left: -400px;
+	right: 0px;
+	bottom: 0px;
+margin: auto;
+		box-shadow: 400px 0 0 #46B8E0, 70px 160px 0 40px #46B8E0,
+			330px 160px 0 40px #46B8E0,10px 10px 0 #FF735F, 390px 10px 0 #FF735F;
+			animation-name: Cboping;
+
+		animation-duration: 4.5s;
+animation-delay: 6s;
+					animation-duration: ease-out;
+				animation-iteration-count: infinite;
+	}
+	.body{
+		width: 1800px;
+		height: 800px;
+		background-color: #46B8E0;
+		top:620px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+margin: auto;	
+		
+	}
+.beard-back{
+		position: absolute;
+	width: 466px;
+	height: 666px;
+	border-radius: 188px;
+	background-color: black;
+	vertical-align: middle;
+	top:29px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto
+		
+
+	
+	
+	}
+.ears{
+		position: absolute;
+	width:593px;
+	height:119px;
+	border-radius: 59px;
+	background-color: #FF9172;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	
+	}
+.ears-shade{
+		position: absolute;
+	width:515px ;
+	height:54px ;
+	border-radius:27px ;
+	background-color:#ff735f ;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto
+	}
+.hair-back{
+		position: absolute;
+	width: 535px;
+	height:345px ;
+	border-radius: 173px;
+	background-color: black;
+	top:-230px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin:   auto
+	}
+	.head{
+		position: absolute;
+	width:447px ;
+	height:637px ;
+	border-radius:128px 128px 223px 223px;
+	background-color: #ffa178;
+		top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+		overflow: hidden
+	}
+.eyeballs-shade{
+		position: absolute;
+	width: 155px;
+	height: 95px;
+	border-radius:32px;
+	background-color: #ff735f;
+	top:-10px;
+	left: -234px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	box-shadow: 234px 0 0 #ff735f
+	}
+
+.eyeballs-left{
+		position: absolute;
+	width:  32px;
+	height: 32px;
+	border-radius: 100%;
+	background-color: black;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto ;
+	
+				animation-name: eyeMovement;
+
+	animation-duration: 6.5s;
+animation-delay: 0s;
+	animation-duration:;
+			animation-iteration-count: ;
+
+		
+
+	
+	}
+	.eyeballs{
+		position: absolute;
+		width: 86px;
+		height: 86px;
+		background-color: white;
+		border-radius: 86px;
+		top:-10px;
+	left: -240px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto ;
+		overflow: hidden;
+		
+		
+	}
+
+	
+
+	
+			@-webkit-keyframes eyeMovement {
+0%	{
+	top:0px;
+	width: 44px;
+	height: 26px;
+	left:120px}
+15%,20%{
+	width: 32px; height: 32px; left: 0px;
+					
+				}
+				
+25%{
+	top:-8px;
+	left:-4px;
+	right: 0px;
+	bottom: 0px;
+				}
+27%,29%{
+	top:5px;
+	left: 5px;
+	right: 0px;
+	bottom: 0px;		
+				}
+31%,33%{
+	top:10px;
+	left: -2px;
+	right: 0px;
+	bottom: 0px;		
+				}
+35%,40%{
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;		
+				}
+41%,43%{
+	top: 30px;				
+				}
+				
+48%,56%{
+	top:-30px;
+	left: -30px;
+	right: 0px;
+	bottom: 0px;		
+				}
+57%,62%{
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;		
+				}
+64%{
+	top:50px;
+	left: -10px;
+	right: 0px;
+	bottom: 0px;		
+				}
+				
+66%,98%{
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;		
+				}
+68%,70%{
+	top:-6px;
+	left: 5px;
+	right: 0px;
+	bottom: 0px;		
+				}
+72%,74%{
+	top:-8px;
+	left:-4px;
+	right: 0px;
+	bottom: 0px;
+				}
+76%,78%{
+	top:5px;
+	left: 5px;
+	right: 0px;
+	bottom: 0px;		
+				}
+80%,86%{
+	top:10px;
+	left: -2px;
+	right: 0px;
+	bottom: 0px;		
+				}
+90%,98%{
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;		
+				}
+	
+			100%{top:50px;
+			left:10px}
+			
+		}
+	.eyeballs-left2{
+		position: absolute;
+	width:  32px;
+	height: 32px;
+	border-radius: 100%;
+	background-color: black;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto ;
+	
+		animation-name: eyeMovement;
+	animation-duration: 6.5s;
+animation-delay: 0s;
+			animation-iteration-count: ;
+
+	
+	}
+	.eyeballs2{
+		position: absolute;
+		width: 86px;
+		height: 86px;
+		background-color: white;
+		border-radius: 86px;
+		top:-10px;
+	left: 240px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto ;
+		overflow: hidden
+		
+		
+	}
+	@-webkit-keyframes blink1 {
+		0%,18%{top:-110px;
+			
+		}
+		20%{
+			top:0px;
+		}
+	
+	22%,40%{top:-110px;
+			
+		}
+		
+		42%,64%{top:0px}
+		44%,62%,66%,94%{top:-110px}
+		
+		97{top:0px}
+	100%{
+		top:0px;
+		
+	}
+	}
+
+		.blink{
+		position: absolute;
+		width:  100px;
+		height: 100px;
+		background-color: #FF9172;
+		top:-110px;
+			
+			animation-name: blink1;
+	animation-duration: 6.5s;
+animation-delay: 0s;
+			animation-iteration-count:;
+		
+	}
+	
+	
+	.blink2{
+		position: absolute;
+		width:  100px;
+		height: 100px;
+		background-color: #FF9172;
+		top:-110px;
+			animation-name: blink1;
+	animation-duration: 6.5s;
+animation-delay: 0s;
+			animation-iteration-count: ;
+		
+		
+	}
+
+	@-webkit-keyframes eb1 {
+		0%{
+	top:-20px;
+	left: 70px;
+	right: 0px;
+	bottom: 0px;
+			transform: rotate(10deg)
+		}
+			50%{
+	top:-30px;
+	left: -10px;
+	right: 0px;
+	bottom: 0px;
+			transform: rotate(-3deg)
+		}
+		
+				100%{
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+		}
+	}
+	
+	@-webkit-keyframes eb2 {
+		
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			top:-170px;
+	left: -240px;
+	right: 0px;
+	bottom: 0px;
+			
+		}
+		5%,35%,65%{
+			top: -220px;
+		}
+			20%,50%,80%{
+			top: -220px;
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+			top:-170px;
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+				top:-170px;
+	left: -240px;
+	right: 0px;
+	bottom: 0px;
+			
+		}
+		
+	}
+
+	#ebM{
+			position: absolute;
+		top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+		animation-name: eb1;
+	animation-duration: 2s;
+animation-delay: 0s;
+		animation-timing-function: ease-in-out;
+	}
+.eyebrows{
+		position: absolute;
+		width: 116px;
+	height:29px;
+	border-radius:14px;
+	background-color: black;
+	top:-170px;
+	left: -240px;
+	right: 0px;
+	bottom: 0px;
+	box-shadow: 240px 0px 0 black, 0px 8px 0 #FF735F, 240px 8px 0 #FF735F;
+	margin: auto ;
+	animation-name: eb2;
+	animation-duration: 4.5s;
+animation-delay: 6s;
+		animation-timing-function: ease-in-out;
+					animation-iteration-count: infinite;
+
+	}
+	
+	@-webkit-keyframes mouth1 {
+		0%,9.9%{
+		visibility: hidden;
+		}
+		10%,38.9%{
+		visibility: visible;
+		}
+		
+		41%,62.9%{
+		visibility: hidden;
+		}
+		63%,78.9%{
+		visibility: visible;
+		}
+		96%{
+		visibility: visible;
+		height: 92px;
+		}
+		98%{
+		visibility: visible;
+		height: 100px;
+		}
+		
+		99.9%{
+			visibility: visible;
+		height: 0px;
+		}
+		100%{
+		visibility: hidden;
+			
+		}
+	}
+
+
+.mouth{
+		position: absolute;
+		width: 189px;
+	height:92px;
+	border-radius:0 0 92px 92px;
+	background-color: #bf1836;
+	top:460px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	overflow: hidden;
+	visibility: hidden;
+	
+	animation-name: mouth1;
+	animation-duration: 6.5s;
+animation-delay: 0s;
+		animation-timing-function: ease-in-out;
+					animation-iteration-count: ;
+	}
+.throat{
+		position: absolute;
+	width:64px ;
+	height:64px;
+	border-radius:64px;
+	background-color: #720b15;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto
+	}
+.tongue{
+		position: absolute;
+	width: 92px;
+	height:92px;
+	border-radius:92px;
+	background-color: #ff295f;
+	top:50px;
+	left: 60px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto
+	}
+.teeth{
+		position: absolute;
+		width: 155px;
+	height:26px;
+	border-radius: 0 0 26px 26px;
+	background-color: white;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: 0 auto;
+	overflow: hidden
+	}
+.teeth-shade{
+		position: absolute;
+	width: 165px;
+	height:9px;
+	border-radius:;
+	background-color: #dddfed;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+
+	}
+.cheek{
+		position: absolute;
+	width: 116px;
+	height:29px;
+	border-radius:29px;
+	background-color: #ff735f;
+	top:190px;
+	left: -240px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	box-shadow: 240px 0 0 #ff735f
+	
+	}
+.cheek-right{
+		position: absolute;
+	width: 116px;
+	height:29px;
+	border-radius:29px;
+	background-color: #ff735f;
+	top:40px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto
+	}
+.beard-front{
+		position: absolute;
+	width: 282px;
+	height:149px;
+	border: 20px solid black;
+	border-radius:189px;
+	top:450px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto
+	}
+
+.nose{
+		position: absolute;
+		width:80px ;
+	height:152px;
+	border-radius:80px;
+	background-color:#ff9172;
+	top:50px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	box-shadow: 0 10px 0 #FF735F
+	
+	}
+.hairfront-shadeS{
+		position: absolute;
+	width: 435px;
+	height:218px;
+	border-radius:218px;
+	background-color: #ff735f;
+	top:-535px;
+	left: -100px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	
+	}
+.hairfrontC-shade{
+		position: absolute;
+	width: 167px;
+	height:167px;
+	border-radius:167px;
+	background-color: #ff735f;
+	top:-435px;
+	left: 310px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+	.hairfrontC{
+		position: absolute;
+		width: 167px;
+	height:167px;
+	border-radius:167px;
+	background-color: black;
+		top:-450px;
+	left: 340px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+		
+	}
+.hairfrontC-line{
+		position: absolute;
+	width: 100px;
+	height:100px;
+	 border-bottom: 12px inset transparent;
+    border-radius: 100px;
+    border-right: 12px inset white;
+	border-top: 12px dotted transparent;
+		border-left: 12px dotted transparent;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	transform: rotate(40deg)
+
+	}
+	.re1{
+		width: 12px;
+		height: 12px;
+		background: white;
+		margin: 73px 0 0 133px;
+		border-radius: 12px;
+		box-shadow: -50.5px 60.7px 0 white
+		
+	
+		
+	}
+.hairfront{
+		position: absolute;
+	width: 435px;
+	height:218px;
+	border-radius:218px;
+	background-color: black;
+	top:-550px;
+	left: -100px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+.hairfront-line1{
+		position: absolute;
+	width: 186px;
+	height:14px;
+	border-radius:14px;
+	background-color: white;
+	top:-130px;
+	left: -60px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	
+	}
+.hairfront-line2{
+		position: absolute;
+	width: 125px;
+	height:14px;
+	border-radius:14px;
+	background-color: white;
+	top:-30px;
+	left: 100px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+.hairfront-line3{
+		position: absolute;
+	width: 154px;
+	height:14px;
+	border-radius:14px;
+	background-color: white;
+	top:110px;
+	left: -120px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+.glasses-shade{
+		position: absolute;
+	width: 66px;
+	height:66px;
+	border-radius:82px;
+	border-top: 8px solid #FF735F;
+		border-right: 8px solid #FF735F;
+	border-bottom: 8px solid transparent;
+		border-left: 8px solid transparent;
+	transform: rotate(-45deg);
+	top:20px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+.glasses-left{
+		position: absolute;
+	width: 145px;
+	height:85px;
+	border-radius:32px;
+	border: 8px solid black;
+	top:-10px;
+	left: -240px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+.glasses-center{
+		position: absolute;
+	width: 66px;
+	height:66px;
+	border-radius:82px;
+	border-top: 8px solid black;
+		border-right: 8px solid black;
+	border-bottom: 8px solid transparent;
+		border-left: 8px solid transparent;
+	transform: rotate(-45deg);
+	top:15px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+	.re2{
+		width: 8px;
+		height: 8px;
+		background: black;
+		margin: 3.4px 0px 0 2.8px;
+		border-radius: 12px;
+		box-shadow: 53px 51px 0 black,-2.5px 3.5px 0 #FF735F, 49px 55px 0 #FF735F; 
+		transform: rotate(0deg);
+
+		
+	}
+.glasses-right{
+			position: absolute;
+	width: 145px;
+	height:85px;
+	border-radius:32px;
+	border: 8px solid black;
+	top:-10px;
+	left: 240px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	}
+
+	@keyframes animateCloud{
+		0%{margin-left: -2800px;z-index: -4}
+			100%{margin-left: 100%;z-index: -4}
+	}
+	.x1{animation: animateCloud 120s linear infinite;
+	transform:scale(0.15);top:-300px}
+	
+	.x2{animation: animateCloud 20s linear infinite;
+	transform:scale(0.3);}
+	
+	.x3{animation: animateCloud 90s linear infinite;
+	transform:scale(0.5);top:-300px}
+	
+	.x4{animation: animateCloud 35s linear infinite;
+	transform:scale(0.5);top:-300px}
+	
+	.x5{animation: animateCloud 25s linear infinite;
+	transform:scale(0.6);top:-300px}
+	.x6{animation: animateCloud 15s linear infinite;
+	transform:scale(1);top:-300px}
+		.x7{animation: animateCloud 95s linear infinite;
+	transform:scale(.4);top:-300px}
+.x8{animation: animateCloud 45s linear infinite;
+	transform:scale(.4);top:-300px}
+.x9{animation: animateCloud 85s linear infinite;
+	transform:scale(.8);top:-300px}
+	.cloud{
+		background: white;
+		
+		border-radius: 100px;
+		position: relative;
+		width: 609px;
+		height: 114px;
+		margin: auto;
+		z-index: -4;
+	}
+	.cb{
+		position: absolute;
+		width: 272px;
+		height: 151px;
+		background-color: white;
+		border-radius: 151px;
+		top:-35px;
+	left: 350px;
+	right: 0px;
+	bottom: 0px;
+		z-index: -4
+		
+	}
+		.ct{
+		position: absolute;
+		width: 223px;
+		height: 223px;
+		background-color: white;
+		border-radius: 223px;
+		top:-135px;
+	left: 50px;
+	right: 0px;
+	bottom: 0px;
+		box-shadow: 15px 6px 0 #FECCFF, 210px -60px 0 50px white,225px -50px 0 50px #FECCFF;
+			z-index: -4
+	}
+	#background-warp{
+		bottom:0;
+		left:0;
+		padding-top: 150px;
+		position: fixed;
+		right: 0;
+		top:0;
+		z-index: -4:
+	}
+
+	
+	@-webkit-keyframes slideIn{
+		0%{margin-right: -4000px;margin-top: 200px; transform: rotatez(10deg)}
+			100%{margin-right: 0px; margin-top: 0px}
+	}
+	.me{
+		position: absolute;
+		top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+		
+			animation-name: slideIn;
+
+		animation-duration: 1.5s;
+animation-delay: 0s;
+					animation-duration: ease-out;
+		
+	}
+	
+		@-webkit-keyframes headin{
+		0%{transform: rotatez(20deg); right:-140px;}
+			7%{
+				transform: rotatez(4deg);
+			}
+			11%{
+				transform: rotatez(-2deg); right:10px
+			}
+			17%,25%{transform: rotatez(0deg); right:0px
+				
+			}
+			30%,40%{
+				transform: rotate3d(1,0,1, 15deg); right:-0px;
+			}
+			42%{
+				transform: rotate3d(0,0, 0, 0deg);
+			}
+			100%{margin-right: 0px; margin-top: 0px;}
+	}
+	
+	@-webkit-keyframes boping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			
+		}
+		5%,35%,65%{
+			top: 100px;
+			transform: rotatey(10deg);
+			transform: scale(1.05);
+			transform: rotate(5deg)
+		}
+			20%,50%,80%{
+			top: 100px;
+			transform: rotatey(10deg);
+			transform: scale(1.05);
+			transform: rotate(-5deg)
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+			top:0px;
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			
+		}
+		
+		
+	}
+
+
+	
+	#Ahead{
+		position: absolute;
+		top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 3;
+		
+			animation-name: headin;
+
+		animation-duration: 9.5s;
+animation-delay: 0s;
+					animation-duration: ease-out;
+
+	}
+	
+	.Ahead2{
+		position: absolute;
+		top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	
+	animation-name: boping;
+
+		animation-duration: 4.5s;
+animation-delay: 6s;
+					animation-duration: ease-out;
+				animation-iteration-count: infinite;
+	}
+
+	.me{
+		top:-150px
+		
+	}
+	
+		@-webkit-keyframes Fboping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			
+		}
+		5%,35%,65%{
+			top: 55px;
+			transform: rotatex(25deg);
+		}
+			20%,50%,80%{
+			top: 55px;
+			transform: rotatex(25deg);
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+			top:0px;
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			
+		}
+	}
+	#face{
+			position: absolute;
+		top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	
+	animation-name: Fboping;
+
+		animation-duration: 4.5s;
+animation-delay: 6s;
+					animation-duration: ease-out;
+				animation-iteration-count: infinite;
+		
+	}
+	
+	@-webkit-keyframes closed{
+		0%{visibility: visible}
+		
+	}
+
+	.closedeye{
+					position: absolute;
+		width: 86px;
+		height: 86px;
+		background-color: #FF9172;
+		border-radius: 86px;
+		border-bottom: 7px solid black;
+		border-left: 7px solid black;
+		border-top: 7px solid transparent;
+		border-right: 7px solid transparent;
+		transform: rotate(-45deg);
+		
+			top:-10px;
+	left: -240px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+				visibility: hidden;
+			animation-name: closed;
+
+		animation-duration: 4.5s;
+animation-delay: 6.3s;
+					animation-duration: ease-out;
+				animation-iteration-count: infinite;
+
+	}
+		.closedeye2{
+					position: absolute;
+		width: 86px;
+		height: 86px;
+		background-color: #FF9172;
+		border-radius: 86px;
+		border-bottom: 7px solid black;
+		border-left: 7px solid black;
+		border-top: 7px solid transparent;
+		border-right: 7px solid transparent;
+		transform: rotate(-45deg);
+		
+			top:-10px;
+	left: 240px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	visibility: hidden;
+animation-name: closed;
+animation-duration: 4.5s;
+animation-delay: 6.3s;
+animation-duration: ease-out;
+animation-iteration-count: infinite;
+
+	}
+	
+	@-webkit-keyframes mouth3 {
+		0%,100%{
+			visibility: hidden;
+		}
+	}
+	.closedmouth{
+			position: absolute;
+		width: 191px;
+	height:45px;
+	border-radius:28px;
+	top:410px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+		border-bottom: 7px solid black;
+		border-left: 7px solid transparent;
+		border-top: 7px inset transparent;
+		border-right: 7px solid transparent;
+		transform: rotate(0deg);
+		visibility: visible;
+	animation-name: mouth3;
+animation-duration: 6.5s;	}
+		@-webkit-keyframes mouth2 {
+		0%,{
+		visibility: visible;
+		left:100px;
+		}
+			9.8%{
+		visibility: visible;
+		left:0px;		
+				
+			}
+		10%,40.9%{
+		visibility: hidden;
+		}
+		
+		41%{
+		visibility: visible;
+		top: 440px;
+		left: -30px
+		}
+			62.8%{
+				visibility: visible;
+			top: 430px;
+		left: -40px
+			}
+		63%,78.9%{
+		visibility: hidden;
+		}
+		96%{
+		visibility: hidden;
+		}
+
+		100%{
+		visibility: hidden;
+			
+		}
+	}
+	.aweMouth{
+		position: absolute;
+		width: 66px;
+		height: 66px;
+		background-color: #BF1B36;
+		border-radius: 66px;
+		top:450px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	visibility: hidden;
+		
+	animation-name: mouth2;
+animation-duration: 6.5s;
+animation-duration: ease-out;	}
+	
+			@-webkit-keyframes Hboping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			
+		}
+		5%,35%,65%{
+			top: 15px;
+			transform: rotatex(5deg);
+			
+		}
+			20%,50%,80%{
+			top: 15px;
+			transform: rotatex(-5deg);
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+			top:0px;
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			
+		}
+	}
+	
+	#hairBounce{
+			position: absolute;
+		top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	
+	animation-name: Hboping;
+
+		animation-duration: 4.5s;
+animation-delay: 6s;
+					animation-duration: ease-out;
+				animation-iteration-count: infinite;
+		
+	}
+	
+				@-webkit-keyframes Sboping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			left:0px;
+			bottom:0;
+			right:0;
+			
+		}
+		5%,35%,65%{
+			transform: rotate(-5deg);
+			
+		}
+			20%,50%,80%{
+			transform: rotate(5deg);
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			left:0px;
+			bottom:0;
+			right:0;
+			
+		}
+	}
+
+	
+
+	.soulder{
+	position: absolute;
+	width: 1200px;
+	height:605px;
+	border-radius:208px;
+	background-color: #46B8E0;
+	top:1500px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+		transform: rotate(0deg);
+		
+		animation-name: Sboping;
+
+		animation-duration: 4.5s;
+animation-delay: 6s;
+					animation-duration: ease-out;
+				animation-iteration-count: infinite;
+	}
+	@media only screen and (max-height: 400px){
+		.me{
+			transform: scale(.37);
+			top:-40px
+			
+		}
+		.soulder{
+			left: -265px;
+			margin: auto
+		}
+		@-webkit-keyframes Sboping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			left:-265px;
+			bottom:0;
+			right:0;
+			
+		}
+		5%,35%,65%{
+			transform: rotate(-5deg);
+			
+		}
+			20%,50%,80%{
+			transform: rotate(5deg);
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			left:-265px;
+			bottom:0;
+			right:0;
+			
+		}
+	}
+			@-webkit-keyframes headin{
+		0%{transform: rotatez(20deg); right:-140px;}
+			7%{
+				transform: rotatez(4deg);
+			}
+			11%{
+				transform: rotatez(-2deg); right:10px
+			}
+			17%,25%{transform: rotatez(0deg); right:0px
+				
+			}
+				30%,40%{transform: rotate(8deg);
+				}
+			
+			42%{
+				transform: rotate3d(0,0, 0, 0deg);transform: rotate(0deg)
+			}
+			100%{margin-right: 0px; margin-top: 0px;}
+	}
+		
+	}
+
+	
+	@media only screen and (max-width: 450px) and (max-height:700px){
+		.me{
+			transform: scale(.5);
+			top:80px
+		}
+		#Ahead{
+			left:-40px;
+			
+		}
+		.ears{
+			left: -75px
+		}
+		.ears-shade{
+			left:-30px;
+			width: 510px
+		}
+		.hair-back{
+			left:-43px
+		}
+		.beard-back{
+			left: -10px
+		}
+		.glasses-right{
+			left:229px
+		}
+		.beard-front{
+			left:40px
+		}
+		.hairfrontC{
+			left:310px
+		}
+		.hairfront{
+			left:-70px
+		}
+		.soulder{
+			left:-300px;
+			width: 1000px;
+		}
+	
+		
+		@-webkit-keyframes Sboping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			left:-265px;
+			bottom:0;
+			right:0;
+			
+		}
+		5%,35%,65%{
+			transform: rotate(-5deg);
+			
+		}
+			20%,50%,80%{
+			transform: rotate(5deg);
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			left:-265px;
+			bottom:0;
+			right:0;
+			
+		}
+	}
+		#cloud-scale{
+			transform: scale(.2)
+		}
+		#face{
+			left:20px
+		}
+				@-webkit-keyframes headin{
+		0%{transform: rotatez(20deg); right:-140px;}
+			7%{
+				transform: rotatez(4deg);
+			}
+			11%{
+				transform: rotatez(-2deg); right:10px
+			}
+			17%,25%{transform: rotatez(0deg); right:0px
+				
+			}
+			330%,40%{transform: rotate(8deg);
+				}
+			42%{
+				transform: rotate3d(0,0, 0, 0deg);
+			}
+			100%{margin-right: 0px; margin-top: 0px;}
+	}
+				@-webkit-keyframes Fboping{
+		0%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:35px;
+			bottom:0;
+			right:0;
+			
+		}
+		5%,35%,65%{
+			top: 55px;
+			transform: rotatex(25deg);
+		}
+			20%,50%,80%{
+			top: 55px;
+			transform: rotatex(25deg);
+		}
+		
+		15%,30%,45%,60%,75%,95%{
+			top:0px;
+						transform: rotatey(0deg);
+			transform: rotate(0deg)
+
+		}
+		
+		100%{
+			transform: rotate3d(0,0, 0, 0deg);
+			Top:0;
+			left:35px;
+			bottom:0;
+			right:0;
+			
+		}
+	}
+		
+		@-webkit-keyframes headin{
+		0%{transform: rotatez(20deg); right:-140px;}
+			7%{
+				transform: rotatez(4deg);
+			}
+			11%{
+				transform: rotatez(-2deg); right:10px
+			}
+			17%,25%{transform: rotatez(0deg); right:0px
+				
+			}
+			
+			42%{
+				transform: rotate3d(0,0, 0, 0deg);
+			}
+			100%{margin-right: 0px; margin-top: 0px;}
+	}
+		
+	}
+	</style>
+<body>
+
+	<div class="bg"></div>
+
+<div id="background-warp">
+<div id="cloud-scale"></div>
+<div class="x1">
+	<div class="cloud">
+		<div class="cb"></div>
+		<div class="ct"></div>
+	</div>
+</div>
+	<div class="x2">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div>
+	
+<div class="x3">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div>
+<div class="x4">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div><div class="x5">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div>
+	
+<div class="x6">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div>
+<div class="x7">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div>
+<div class="x8">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div>
+<div class="x9">
+	<div class="cloud">
+	<div class="cb"></div>
+		<div class="ct"></div></div>
+</div>
+	<div class="me">
+<div class="soulder"></div>
+<div class="neck">
+	<div class="neck-shade"></div>
+	<div class="collar"></div>
+	</div>
+<div id="Ahead">
+<div class="Ahead2">
+<div class="beard-back"></div>
+<div class="ears"></div>
+<div class="ears-shade"></div>
+<div class="hair-back"></div>
+	
+<div class="head">
+<div class="hairfront-shadeS"></div>
+<div class="hairfrontC-shade"></div>
+	</div>
+	<div id="face">
+<div class="eyeballs-shade"></div>
+<div class="eyeballs">
+
+<div class="eyeballs-left"></div>
+<div class="blink"></div>	
+	</div>
+
+<div class="eyeballs2">
+
+<div class="eyeballs-left2"></div>
+<div class="blink2"></div>	
+	</div>
+	<div class="closedeye">
+		<div class="re3"></div>
+		</div>
+		<div class="closedeye2">
+		<div class="re3"></div>
+		</div>
+	<div id="ebM">
+<div class="eyebrows"></div>
+		</div>
+<div class="mouth">
+<div class="throat"></div>
+<div class="tongue"></div>
+<div class="teeth">
+<div class="teeth-shade"></div>
+	</div>
+	
+	</div>
+	<div class="closedmouth"></div>
+	<div class="aweMouth"></div><div class="nose"></div>
+<div class="cheek"></div>
+	<div class="glasses-shade"></div>
+<div class="glasses-center">
+	<div class="re2"></div></div>	
+<div class="glasses-left"></div>
+
+<div class="glasses-right"></div>
+		
+	</div>
+<div class="beard-front"></div>
+<div id="hairBounce">
+<div class="hairfrontC">
+<div class="hairfrontC-line">
+	</div>
+	<div class="re1"></div></div>
+<div class="hairfront">
+<div class="hairfront-line1"></div>
+<div class="hairfront-line2"></div>
+<div class="hairfront-line3"></div></div>
+
+</div></div></div></div>
+
+	
+
+	
+
+	
+</div>	
+	
+	<div class=""></div>
+
+
+
+
+</body>
+</html>
