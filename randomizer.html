@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	
+	
+	
+	<style>
+body {background-color: #ececec;
+font-family: Helvetica, Arial, sans-serif; 
+line-height: 1.4em;
+width: 90%;
+padding-left: 5%;
+padding-top: 10px;}
+.leftcolumn {
+	display:inline-block;
+	float:left;
+	width: 31%;
+    padding-right: 2%;
+		overflow: hidden;
+}
+	
+.midcolumn {
+	display:inline-block;
+	float:left;
+	width: 31%;
+    padding-right: 2%;
+}
+	
+	
+.rightcolumn {
+	display:inline-block;
+	float:left;
+	width: 31%;
+    padding-right: 2%;
+}
+	
+
+
+.footer {
+    display: inline-block;
+    border:none;
+    width: 100%;
+    padding-top:20px;
+}
+	
+h1   {color: #ff4b2e;
+	font-size: 64px;
+	letter-spacing: -2px;
+	line-height: 1.1em;}
+	
+
+a {
+  color: black;
+}
+	
+a:hover {
+  text-decoration: none;
+	color: #ff4b2e;
+}	
+	
+
+	
+p    {color: black;}
+	
+	
+
+	
+	
+@media only screen and (max-width: 700px) {
+.leftcolumn {
+	display:block;
+    border: none;
+	width: 98%;
+    padding-right: 2%;
+}
+	
+.midcolumn {
+	display:block;
+    border: none;
+	width: 98%;
+    padding-right: 2%;
+}	
+	
+.rightcolumn {
+	display:block;
+	border:none;
+	width: 98%;
+    padding-left:0px;
+    padding-right:2%;
+}
+	
+	
+	
+}
+</style>
+</head>
+<body>
+
+<h1>3X Randomizer</h1>
+	
+	
+	
+	
+<div class="leftcolumn">
+	Column 1<br><br>
+	
+<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script>
+</div>
+
+<div class="midcolumn">
+Column 2<br><br>
+	
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://snguye44.github.io/DES350/natureposterfinal.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://jmiran28.github.io/DES350/olympic-poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://dmejia11.github.io/DES350/Mejia_rocky.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script>
+	
+</div>
+	
+	<div class="rightcolumn">
+Column 3<br><br>
+	
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://samorie.github.io/DES350/poster_final1.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://donteking.github.io/DES350/AnimatedPoster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://ahalam2.github.io/DES350/Yellowstone.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script>
+</div>
+
+<div class="footer">
+Fall 2019<br>
+UIC<br>
+	<br></div>
+
+</body>
+</html>
