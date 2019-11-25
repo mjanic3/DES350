@@ -120,6 +120,21 @@ p    {color: black;}
 • Lecture and lab - using Javascript to set up random databases. <br>
 • Review of mobile breakpoint.<br>
 • The code for this exercise can be found here (view source to get the code): <a href="https://mjanic3.github.io/DES350/randomizer.html" target="_blank">3 Column Randomzier</a><br><br>
+	
+	The Javascript we will be using for our page:<br><br>
+	&lt;script type="text/javascript"&gt;<br>
+var total_images = 3;<br>
+var random_number = Math.floor((Math.random()*total_images));<br>
+var random_img = new Array();<br>
+random_img[0] = '&lt;a href="page1.html"&gt;&lt;img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"&gt;&lt;/a&gt;';<br>
+random_img[1] = '&lt;a href="page2.html"&gt;&lt;img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"&gt;&lt;/a&gt;';<br>
+random_img[2] = '&lt;a href="page3.html"&gt;&lt;img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"&gt;&lt;/a&gt;';<br>
+document.write(random_img[random_number]);<br>
+&lt;/script&gt;<br>
+	
+	<br><br>
+	
+	
 	Below is a link list of National Park Gifs for your 3-column randomizer. Group the posters into three databases and link to your page. <br><br>
 
 Sequoia: https://zali30.github.io/DES350/web/photo/posterM.gif<br>
