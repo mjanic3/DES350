@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+body {background-color: #ececec;
+font-family: Helvetica, Arial, sans-serif; 
+line-height: 1.4em;
+width: 90%;
+padding-left: 5%;
+padding-top: 5%}
+.leftcolumn {
+	display:inline-block;
+	float:left;
+    border-right: 1px solid black;
+	width: 68%;
+    padding-right: 2%;
+}
+.lineup {
+	display:inline-block;
+	float:left;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 15px;
+	width: 100%;
+}
+.lineupmain {
+	display:inline-block;
+	float:left;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 0px;
+	width: 100%;
+}
+.rightcolumn {
+	display:inline-block;
+	float:left;
+	border:none;
+	width: 25%;
+    padding-left:20px;
+}
+.footer {
+    display: inline-block;
+    border:none;
+    width: 100%;
+    padding-top:20px;
+}
+	
+h1   {color: #ff4b2e;
+	font-size: 64px;
+	letter-spacing: -2px;
+	line-height: 1.1em;}
+	
+
+a {
+  color: black;
+}
+	
+a:hover {
+  text-decoration: none;
+	color: #ff4b2e;
+}	
+	
+	.menu {
+		position: fixed;
+		top:0px;
+		left:0px;
+		width: 94%;
+		padding-left: 6%;
+		padding-top: 20px;
+		height: 40px;
+		background-color: #ececec;
+	}
+	
+p    {color: black;}
+	
+	
+.floatingCircle {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border-style: solid;
+  	border-width: 8px;
+	border-color: black;
+  	width: 205px;
+  	height: 205px;  
+	border-radius: 205px;
+}	
+	
+.moon {
+	position: absolute;
+	top: 5px;
+	left: 12px;
+  	width: 210px;
+  	height: 210px;
+  	border-radius: 50%;
+  	box-shadow: inset 35px 0px #989999;
+  	transform: rotate(90deg);
+}	
+	
+.beard {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+  	width: 210px;
+  	height: 210px;
+  	border-radius: 60%;
+  	box-shadow: inset 50px 0px #cbcccc;
+  	transform: rotate(-90deg);
+}
+	
+.eyeLeft {
+	position: absolute;
+	background-color: black;
+	top: 120px;
+	left: 61px;
+  	width: 15px;
+  	height: 15px;  
+	border-radius: 300px;
+}
+	
+	
+.eyeRight {
+	position: absolute;
+	background-color: black;
+	top: 120px;
+	left: 156px;
+
+  	width: 15px;
+  	height: 15px;  
+	border-radius: 300px;
+}	
+	
+	
+	
+.glassLeft {
+	position: absolute;
+	background-color: white;
+	top: 85px;
+	left: 28px;
+	border-style: solid;
+  	border-width: 9px;
+	border-color: black;
+  	width: 64px;
+  	height: 64px;  
+	border-radius: 300px;
+}
+	
+	
+.glassRight {
+	position: absolute;
+	background-color: white;
+	top: 85px;
+	left: 122px;
+	border-style: solid;
+  	border-width: 9px;
+	border-color: black;
+  	width: 64px;
+  	height: 64px;  
+	border-radius: 300px;
+}
+	
+.bridge {
+	position: absolute;
+	background-color: black;
+
+	border-radius: 50px 50px 0 0;
+	
+	top: 122px;
+	left: 106px;
+  	width: 20px;
+  	height: 20px;  
+}
+	
+.bridge-cover {
+	position: absolute;
+	background-color: #ecebeb;
+
+	border-radius: 50px 50px 0 0;
+	
+	top: 130px;
+	left: 106px;
+  	width: 20px;
+  	height: 20px;  
+}
+	
+.hairOne {
+	position: absolute;
+	top: 178px;
+	left: 80px;
+	width: 70px;
+    height: 15px; /* as the half of the width */
+    background-color: #989999;
+    border-top-left-radius: 60px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 60px; /* 100px of height + 10px of border */
+	border-bottom-right-radius: 50px; /* 100px of height + 10px of border */
+	border-bottom-left-radius: 50px; /* 100px of height + 10px of border */
+}
+	
+.trapezoid {
+	position: absolute;
+	top: 185px;
+	left: 87px;
+     border-bottom: 35px solid #989999;
+     border-left: 8px solid transparent;
+     border-right: 8px solid transparent;
+     height: 0;
+     width: 40px;
+	transform: rotate(180deg);
+    }	
+	
+	
+.mouth {
+	position: absolute;
+	top: 192px;
+	left: 99px;
+	width: 32px;
+    height: 9px; /* as the half of the width */
+    background-color: white;
+    border-top-left-radius: 10px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 10px; /* 100px of height + 10px of border */
+	border-bottom-right-radius: 30px; /* 100px of height + 10px of border */
+	border-bottom-left-radius: 30px; /* 100px of height + 10px of border */
+}
+	
+
+.nose {
+	position: absolute;
+	top: 110px;
+	left: 81px;
+	border-style: solid;
+  	border-width: 9px;
+	border-color: #656565;
+  	width: 50px;
+  	height: 50px;  
+	border-radius: 300px;
+}
+	
+	
+.noseCover1 {
+	position: absolute;
+	top: 100px;
+	left: 81px;
+  	width: 50px;
+  	height: 50px;  
+	background-color: #ecebeb;
+	border-radius: 50px;
+}
+	
+	.noseCover2 {
+	position: absolute;
+	top: 118px;
+	left: 60px;
+  	width: 50px;
+  	height: 50px;  
+	background-color: #ecebeb;
+	border-radius: 50px;
+}
+	
+.noseCover3 {
+	position: absolute;
+	top: 118px;
+	left: 124px;
+  	width: 50px;
+  	height: 50px;  
+	background-color: #ecebeb;
+	border-radius: 50px;
+}
+	
+.earRight {
+	position: absolute;
+	background-color: white;
+	top: 118px;
+	left: 210px;
+	border-style: solid;
+  	border-width: 3px;
+	border-color: black;
+  	width: 20px;
+  	height: 20px;  
+	border-radius: 20px;
+}	
+	
+	
+.earLeft {
+	position: absolute;
+	background-color: white;
+	top: 118px;
+	left: -5px;
+	border-style: solid;
+  	border-width: 3px;
+	border-color: black;
+  	width: 20px;
+  	height: 20px;  
+	border-radius: 20px;
+}
+	
+	
+.triangleOne {
+	position: absolute;
+	top: 35px;
+	left: 90px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 30px solid #989999;
+    }
+	
+	.triangleTwo {
+	position: absolute;
+	top: 35px;
+	left: 105px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 30px solid #989999;
+    }
+	
+	.triangleThree {
+	position: absolute;
+	top: 35px;
+	left: 120px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 30px solid #989999;
+    }
+	
+	.mainHolder {
+	position: relative;
+	top: 0px;
+	left: 0px;
+  	width: 180px;
+  	height: 270px; 
+		z-index: -200;
+
+}
+	
+	
+	
+	
+@media only screen and (max-width: 700px) {
+.leftcolumn {
+	display:block;
+    border: none;
+	width: 98%;
+    padding-right: 2%;
+}
+.rightcolumn {
+	display:block;
+	border:none;
+	width: 98%;
+    padding-left:0px;
+    padding-right:2%;
+}
+	
+		.menu {
+		padding-left: 6%;
+		padding-top: 20px;
+		height: 50px;
+		background-color: #ececec;
+	}
+	
+	
+	
+}
+</style>
+</head>
+<body>
+		<div class="menu">
+	<strong><a href="index.html" target="_self">Advanced Interactive Design</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="calendar.html" target="_self">Calendar</a>&nbsp;&nbsp;&nbsp;<a href="projects.html" target="_self">Projects</a>&nbsp;&nbsp;&nbsp;<a href="resources.html" target="_self">Resources</a></div>
+	
+	
+<h1>Projects</h1>
+	<div class="lineupmain"></div>
+<div class="leftcolumn">
+<p>	
+	
+	
+	
+<h2>Project 1 – HTML Calculator</h2><br>
+We will code a working calculator using HTML and Javascript. 
+We will then add CSS code to style the calculator, and investigate how design and functionality are linked.
+<br>
+<br><br>
+</p>
+	
+		<div class="lineup"></div>
+<p>
+<h2>Project 2 – Information Architecture</h2><br>
+- We will create a responsive web-based poster.<br>
+<br>
+</p>	
+	
+	
+
+	<div class="lineup"></div>
+<p>
+<h2>Project 3 – The HTML Portrait</h2><br>	
+	- We will create a self-portrait using only HTML elements with CSS Styling.<br>
+<br>
+
+<br>
+</p>		
+	
+
+	<div class="lineup"></div>
+<p>
+<h2>Project 4 – Mid Term</h2><br>	
+	- TBA closer to the date.<br>
+<br>
+
+<br>
+</p>	
+	
+
+
+<div class="lineup"></div>
+<p>
+<h2>Project 5 – Final Project</h2><br>	
+	- To be discussed with each student at a later date.<br>
+<br>
+
+<br>
+</p>	
+	
+
+	
+
+	
+
+
+</div>
+
+<div class="rightcolumn">
+<p>DES 350 / Fall, 2019<br>
+Mondays + Wednesdays<br>
+Instructor: Michal Janicki</p>
+
+<div class="lineup"></div>
+<p> <strong>Participants</strong><br>
+<a href="http://studiobema.com/" target="_blank">Michal Janicki</a> <br>	
+  <br>
+</p>
+</div>
+
+</body>
+</html>
